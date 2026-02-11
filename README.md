@@ -1,6 +1,6 @@
-# 🏠 Home Services Marketplace – React Native MVP
+# Home Services Marketplace – React Native MVP
 
-## 📌 Project Overview
+## Project Overview
 This project is a **mobile MVP (Minimum Viable Product)** for a home services marketplace, developed as part of a technical test with a **48-hour time constraint**.
 
 The application allows users located in **Casablanca** to request a home service, upload a photo, receive a simulated AI diagnostic, compare service provider quotes, schedule a visit, confirm a cash payment, and rate the service.
@@ -14,7 +14,7 @@ The objective of this project is **not** to build a full production application,
 
 ---
 
-## 🎯 Supported Services
+## Supported Services
 The platform operates in **Casablanca only** and supports the following service categories:
 - Plumbing
 - Electricity
@@ -22,7 +22,7 @@ The platform operates in **Casablanca only** and supports the following service 
 
 ---
 
-## 👤 User Flow
+## User Flow
 The app follows a simple and linear user journey:
 
 1. Select a service category  
@@ -37,7 +37,7 @@ Each screen represents one clear step in the process.
 
 ---
 
-## 🤖 AI Diagnostic (Mocked)
+## AI Diagnostic (Mocked)
 The AI diagnostic feature is **intentionally simulated**.
 
 ### How it works:
@@ -52,7 +52,7 @@ The AI diagnostic feature is **intentionally simulated**.
 
 ---
 
-## 🧱 Technical Stack
+## Technical Stack
 - **React Native (Expo)**
 - **TypeScript**
 - **React Navigation (Stack)**
@@ -61,7 +61,7 @@ The AI diagnostic feature is **intentionally simulated**.
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 The project follows a clean and modular architecture:
 
 src/
@@ -78,7 +78,7 @@ This structure improves readability, scalability, and maintainability.
 
 ---
 
-## 🧠 State Management
+## State Management
 The **Context API** is used to manage the full lifecycle of a service request, including:
 - Selected service category
 - Issue description and image
@@ -92,7 +92,7 @@ This approach avoids prop drilling and keeps the data consistent across screens.
 
 ---
 
-## 🚫 Limitations & Assumptions
+## Limitations & Assumptions
 Due to the limited time frame, the following features were intentionally left out:
 - Backend API integration
 - User authentication
@@ -105,7 +105,7 @@ All data is handled in-memory using mocked services.
 
 ---
 
-## 🚀 Possible Improvements
+## Possible Improvements
 With more time, the following improvements could be implemented:
 - Backend and database integration
 - Authentication and user profiles
@@ -116,7 +116,7 @@ With more time, the following improvements could be implemented:
 
 ---
 
-## ▶️ How to Run the Project
+##  How to Run the Project
 
 ### 1. Install dependencies 2. Start the application
 ```bash
