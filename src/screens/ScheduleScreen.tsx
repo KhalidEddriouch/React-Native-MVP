@@ -5,8 +5,8 @@ const ScheduleScreen = ({ navigation }: any) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Schedule Visit</Text>
-      <Text>📅 Date: Tomorrow</Text>
-      <Text>⏰ Time: 10:00 AM</Text>
+      <Text> Date: Tomorrow</Text>
+      <Text> Time: 10:00 AM</Text>
 
       <Button
         title="Confirm Schedule"

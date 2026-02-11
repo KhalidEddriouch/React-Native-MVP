@@ -1,33 +1,6 @@
 import React, { createContext, useContext, useState, ReactNode } from 'react';
+import {ServiceRequest} from '../models/ServiceRequest';
 
-/**
- * 1️⃣ Define the shape of a service request
- */
-export interface ServiceRequest {
-  category: string;
-  description: string;
-  imageUri?: string;
-  diagnostic?: {
-    issue: string;
-    urgency: string;
-    recommendation: string;
-  };
-  selectedQuote?: {
-    name: string;
-    price: string;
-    rating: number;
-  };
-  schedule?: {
-    date: string;
-    time: string;
-  };
-  paymentConfirmed: boolean;
-  rating?: number;
-}
-
-/**
- * 2️⃣ Define what the context exposes
- */
 interface RequestContextType {
   request: ServiceRequest | null;
   createRequest: (category: string, description: string, imageUri?: string) => void;
@@ -39,14 +12,10 @@ interface RequestContextType {
   resetRequest: () => void;
 }
 
-/**
- * 3️⃣ Create the context
- */
+
 const RequestContext = createContext<RequestContextType | undefined>(undefined);
 
-/**
- * 4️⃣ Provider component
- */
+
 export const RequestProvider = ({ children }: { children: ReactNode }) => {
   const [request, setRequest] = useState<ServiceRequest | null>(null);
 
@@ -110,9 +79,7 @@ export const RequestProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-/**
- * 5️⃣ Custom hook (clean usage in screens)
- */
+
 export const useRequest = () => {
   const context = useContext(RequestContext);
   if (!context) {

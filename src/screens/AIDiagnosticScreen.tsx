@@ -7,11 +7,11 @@ const AIDiagnosticScreen = ({ navigation }: any) => {
       <Text style={styles.title}>AI Diagnostic Result</Text>
 
       <Text style={styles.result}>
-        🔧 Issue: Possible technical malfunction
+         Issue: Possible technical malfunction
       </Text>
       <Text style={styles.result}>⚠️ Urgency: Medium</Text>
       <Text style={styles.result}>
-        💡 Recommendation: Technician visit required
+         Recommendation: Technician visit required
       </Text>
 
       <Button

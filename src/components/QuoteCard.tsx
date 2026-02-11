@@ -13,8 +13,8 @@ const QuoteCard: React.FC<Props> = ({ name, price, rating, onSelect }) => {
   return (
     <View style={styles.card}>
       <Text style={styles.name}>{name}</Text>
-      <Text>💰 Price: {price}</Text>
-      <Text>⭐ Rating: {rating}</Text>
+      <Text> Price: {price}</Text>
+      <Text> Rating: {rating}</Text>
 
       <PrimaryButton title="Choose" onPress={onSelect} />
     </View>

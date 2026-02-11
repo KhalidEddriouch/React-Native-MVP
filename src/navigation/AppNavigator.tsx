@@ -2,7 +2,6 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-// Import screens
 import HomeScreen from '../screens/HomeScreen';
 import CreateRequestScreen from '../screens/CreateRequestScreen';
 import AIDiagnosticScreen from '../screens/AIDiagnosticScreen';
@@ -11,7 +10,6 @@ import ScheduleScreen from '../screens/ScheduleScreen';
 import PaymentScreen from '../screens/PaymentScreen';
 import RatingScreen from '../screens/RatingScreen';
 
-// Define navigation param types (TypeScript best practice)
 export type RootStackParamList = {
   Home: undefined;
   CreateRequest: { category: string };
